@@ -1,0 +1,20 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+node_modules
+
+# Local env files
+.env*
+!.env.example
+
+# Build Outputs
+out/
+build
+dist
+
+# Debug
+npm-debug.log*
+
+# Misc
+.DS_Store
+*.pem
