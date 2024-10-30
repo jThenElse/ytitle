@@ -17,15 +17,26 @@ cd ytitle
 pnpm install
 ```
 
-3. Set up environment variables (if using OpenAI or Anthropic):
+3. Set up environment variables (if using OpenAI or Anthropic): Create a `.env` file with your API keys if you plan to use OpenAI or Anthropic models.
 
-4. Optional: Add to your `.bashrc` or `.zshrc` for global access:
+4. Optional: Use build script and add to your `.bashrc` for global access:
 
 ```bash
 alias ytitle='node ~/path/to/ytitle/dist/main.js'
+```
 
-# use like this:
+## Usage
+
+Basic usage:
+
+```bash
 ytitle https://www.youtube.com/watch?v=videoId
+```
+
+With transcript:
+
+```bash
+ytitle -t https://www.youtube.com/watch?v=videoId
 ```
 
 ## How It Works
@@ -34,13 +45,14 @@ ytitle https://www.youtube.com/watch?v=videoId
 
    - Original title
    - Video description
-   - Full transcript
+   - Transcript (optional, use --transcript flag)
 
 2. Processes the information through an AI model
 
 3. Generates three alternative titles following these guidelines:
    - Informative and factual
    - No clickbait or sensationalism
+   - Capitalized like sentences
    - Clear, straightforward language
    - Focuses on main topics
    - Neutral tone
@@ -55,9 +67,9 @@ EMERGENCY EPISODE: Ex-Google Officer Finally Speaks Out On The Dangers Of AI! - 
 
 **Generated Alternatives:**
 
-1. Mustafa Suleyman on AI, Creativity, and the Future of Humanity
-2. AI, Creativity and the Future of Work with Mustafa Suleyman
-3. Artificial Intelligence and the Challenges Ahead: A Conversation with Mustafa Suleyman
+1. Mo Gawdat discusses AI's future and its societal impact
+2. Debate on AI capabilities, dangers, and societal impact
+3. Insights on artificial intelligence from ex-Google exec Mo Gawdat
 
 ### Example 2 - [video link](https://www.youtube.com/watch?v=rOYlOdDgYUU)
 
@@ -67,9 +79,9 @@ Dr Joe Dispenza: You MUST Do This Before 10am To Fix It!
 
 **Generated Alternatives:**
 
-1. The Intersection of Science and Mindfulness with Joe Dispenza
-2. Transforming Ourselves through the Power of Knowledge: A Conversation with Joe Dispenza
-3. Mind, Body, and Spirit: Unpacking Life's Big Questions with Joe Dispenza
+1. How Joe Dispenza merges science with mindfulness
+2. Exploring behavioral change and healing with Joe Dispenza
+3. Joe Dispenza discusses the science of self-healing and mindfulness
 
 ## Contributing
 
