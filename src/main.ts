@@ -71,6 +71,7 @@ If the video covers multiple topics, prioritize the most significant or overarch
 Double-check that the title aligns with the provided video information.
 Use a calm, clear tone, avoiding overly dramatic or sensational language.
 Do not use Questions or statements that could be interpreted as questions.
+Use the langugage used in the description tags.
 
 Remember: Your goal is to create titles that inform users about the video content accurately and concisely, encouraging clicks through relevance rather than sensationalism.`,
       },
